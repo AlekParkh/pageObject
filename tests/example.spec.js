@@ -52,7 +52,6 @@ test('Chane lang by page setting menu', async ({page}) => {
 
     await pageSettingFragments.changeLangTo("Русский");
 
-    await page.waitForLoadState("networkidle")
     await expect(page).toHaveURL(/ru/)
 })
 

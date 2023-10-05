@@ -6,7 +6,7 @@ class Header {
         this.page = page;
         this.root = page.locator('[class*=tm-base-layout__header_is-sticky]')
         this._searchBtn = page.locator('[class*=tm-header-user-menu__search]');
-        this._userMenu = page.locator('[class*=tm-dropdown__head]').first();
+        this._userMenu = page.locator('[data-test-id="menu-toggle-guest"]');
         this._pageSettingsBtn = page.locator('[class*=tm-user-menu__menu-link_grey]');
         this._loginBtninMenu = page.locator('[class*=tm-user-menu__auth-button]').nth(1)
     }
